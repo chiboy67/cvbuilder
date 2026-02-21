@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="cv-card">
+        <h1>{{ name }}</h1>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Phone:</strong> {{ phone }}</p>
+
+        <h2>Skills</h2>
+        <p>{{ skills }}</p>
+
+        <h2>Education</h2>
+        <p>{{ education }}</p>
+
+        <button onclick="window.print()">Download CV</button>
+
+        <hr>
+
+        <h3>Want a Premium Design?</h3>
+        <a href="/premium">
+            <button style="background-color: gold; color: black;">
+                Upgrade to Premium
+            </button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
